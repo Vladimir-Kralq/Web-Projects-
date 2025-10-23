@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity Book Summaries</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+  <div class="main-container">
+
+    <div class="header-container">
+ <header>
+    <div class="container">
+        <h1> Books </h1>
+
+        
+        <button class="burger" id="burger-menu" aria-label="Toggle menu">☰</button>
+
+       
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li>
+                    <a href="#books" class="category-link" data-category="all">Books</a>
+                    <ul class="dropdown">
+                        <li><a href="#books" class="category-link" data-category="productivity">Productivity</a></li>
+                        <li><a href="#books" class="category-link" data-category="communication">Communication</a></li>
+                        <li><a href="#books" class="category-link" data-category="personal-finance">Personal Finance</a></li>
+                        <li><a href="#books" class="category-link" data-category="business">Business</a></li>
+                        <li><a href="#books" class="category-link" data-category="human-behavior">Human Behavior</a></li>
+                    </ul>
+                </li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    </div>
+</header>
+
+
+<div class="layout">
+
+  <!-- ЛЯВА КОЛОНА: навигация -->
+  <aside class="left-sidebar">
+    <h3>Навигация</h3>
+    <ul>
+      <li><a href="#home">Начало</a></li>
+      <li><a href="#books">Книги</a></li>
+      <li><a href="#about">За сайта</a></li>
+      <li><a href="#contact">Контакт</a></li>
+     
+    </ul>
+  </aside>
+
+ 
+  <div class="middle-column">
+    <p>Малките стъпки, повтаряни всеки ден, водят до големи резултати. Не спирай да се развиваш – всяка страница, която прочетеш, те приближава към успеха..</p>
+  </div>
+
+  
+  <aside class="right-sidebar">
+    <h3>Бързи връзки</h3>
+    <ul>
+      <li><a href="#home">⬆️ Начало</a></li>
+      <li><a href="#books">📚 Към книги</a></li>
+      <li><a href="#contact">✉️ Контакт</a></li>
+    </ul>
+  </aside>
+
+</div>
+
+
+
+
+   <div class="content-container">
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Master Productivity with Book Summaries</h2>
+            <p>Get the key insights from the best productivity books in minutes.</p>
+        </div>
+    </section>
+
+    <section id="books">
+        <div class="container">
+            <h2>Featured Books</h2>
+            <label for="category-select">Select a category:</label>
+            <select id="category-select">
+                <option value="all">All</option>
+                <option value="productivity">Productivity</option>
+                <option value="communication">Communication</option>
+                <option value="personal-finance">Personal Finance</option>
+                <option value="business">Business</option>
+                <option value="human-behavior">Human Behavior</option>
+            </select>
+            <div class="book-summaries">
+                <!-- Productivity Books -->
+                <div class="book productivity">
+                    <img src="Images/category-productivity/the-art-of-laziness.jpg" alt="The Art of Laziness">
+                    <h3>The Art of Laziness</h3>
+                    <p>Learn how to work smart, not hard, and achieve more with less effort.</p>
+                    <a href="https://dn721601.ca.archive.org/0/items/oceanof-pdf.com-the-art-of-laziness-library-mindset/_OceanofPDF.com_The_art_of_laziness_-_Library_Mindset.pdf" class="learn-more">Learn More</a>
+                </div>
+                <div class="book productivity">
+                    <img src="Images/category-productivity/do-it-today.jpg" alt="Do It Today">
+                    <h3>Do It Today</h3>
+                    <p>Overcome procrastination and start taking action today with simple habits.</p>
+                    <a href="https://www.amazon.com/Do-Today-Procrastination-Productivity-Meaningful-ebook/dp/B07DRP1Q5W" class="learn-more">Learn More</a>
+                </div>
+                <div class="book productivity">
+                    <img src="Images/category-productivity/deep-work.jpg" alt="Deep Work">
+                    <h3>Deep Work</h3>
+                    <p>Discover how to focus intensely and accomplish more in less time.</p>
+                    <a href="http://amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692" class="learn-more">Learn More</a>
+                </div>
+                <div class="book productivity">
+                    <img src="Images/category-productivity/hyper-focus.jpg" alt="Hyperfocus">
+                    <h3>Hyperfocus</h3>
+                    <p>Learn to control your attention and balance between deep work and creativity.</p>
+                    <a href="https://www.additudemag.com/understanding-adhd-hyperfocus/?srsltid=AfmBOoppeaXSlm_r0Dn4CBrqm9X8K0qcQBC2A-PuSTaZh7mbpmN64tUv" class="learn-more">Learn More</a>
+                </div>
+                <div class="book productivity">
+                    <img src="Images/category-productivity/atomic-habits.jpg" alt="Atomic Habits">
+                    <h3>Atomic Habits</h3>
+                    <p>Small, consistent changes lead to remarkable results over time. Start today!</p>
+                    <a href="https://jamesclear.com/atomic-habits" class="learn-more">Learn More</a>
+                </div>
+
+                <!-- Communication Books -->
+                <div class="book communication">
+                    <img src="Images/category-communication/how-to-talk-to-anyone.jpg" alt="How to Talk to Anyone">
+                    <h3>How to Talk to Anyone</h3>
+                    <p>Learn the art of conversation and connect with anyone.</p>
+                    <a href="https://jamesclear.com/atomic-habits" class="learn-more">Learn More</a>
+                </div>
+                <div class="book communication">
+                    <img src="Images/category-communication/talk-like-ted.jpg" alt="Talk Like TED">
+                    <h3>Talk Like TED</h3>
+                    <p>Master the public speaking techniques of the best TED speakers.</p>
+                    <a href="https://jamesclear.com/atomic-habits" class="learn-more">Learn More</a>
+                </div>
+                <div class="book communication">
+                    <img src="Images/category-communication/how-to-become-people-magnet.jpg" alt="How to Become a People Magnet">
+                    <h3>How to Become a People Magnet</h3>
+                    <p>Develop charisma and become more engaging in your conversations.</p>
+                    <a href="http://amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692" class="learn-more">Learn More</a>
+                </div>
+                <div class="book communication">
+                    <img src="Images/category-communication/how-to-win-friends-and-influence-people.jpg" alt="How to Win Friends and Influence People">
+                    <h3>How to Win Friends and Influence People</h3>
+                    <p>Timeless principles for better interpersonal relationships.</p>
+                    <a href="https://www.amazon.com/Do-Today-Procrastination-Productivity-Meaningful-ebook/dp/B07DRP1Q5W" class="learn-more">Learn More</a>
+                </div>
+                <div class="book communication">
+                    <img src="Images/category-communication/never-split-the-difference.jpg" alt="Never Split the Difference">
+                    <h3>Never Split the Difference</h3>
+                    <p>Negotiation tactics from a former FBI hostage negotiator.</p>
+                    <a href="https://www.amazon.com/Do-Today-Procrastination-Productivity-Meaningful-ebook/dp/B07DRP1Q5W" class="learn-more">Learn More</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>    
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About This Site</h2>
+            <p>This site is dedicated to helping people improve their productivity by summarizing key lessons from some of the best books on the topic. Stay focused, take action, and transform your life one habit at a time!</p>
+        </div>
+    </section>
+
+   <section id="contact" class="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or feedback, feel free to reach out!</p>
+        <form id="contact-form" novalidate>
+            <input type="text" name="name" id="name" placeholder="Your Name" required>
+            <div class="error-message" id="name-error"></div>
+
+            <input type="email" name="email" id="email" placeholder="Your Email" required>
+            <div class="error-message" id="email-error"></div>
+
+            <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+            <div class="error-message" id="message-error"></div>
+
+            <button type="submit">Send</button>
+               <div class="success-message" id="success-message"></div>
+        </form>
+    </div>
+</section>
+
+
+ <div class="footer-container">
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Productivity Book Summaries. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    </div>
+    </div>
+</body>
+</html>
