@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <title>Контакти</title>
+</head>
+
+<body>
+
+
+<!-- Хедър с навигация -->
+<section class="contact-header">
+  <nav>
+    <a href="index.html">
+      <img src="../images/logo.png" alt="PU Logo">
+    </a>
+    <div class="nav-links" id="navLinks">
+      <i class="fa fa-times" id="closeIcon" onclick="hideMenu()"></i>
+      <ul>
+        <li><a href="index.html">Начало</a></li>
+        <li><a href="gallery.html">Галерия</a></li>
+        <li><a href="aboutUs.html">За Нас</a></li>
+        <li><a href="index.html#courses">Курсове</a></li>
+        <li><a href="contact.html">Контакти</a></li>
+      </ul>
+    </div>
+    <i class="fa fa-bars" id="menuIcon" onclick="showMenu()"></i>
+  </nav>
+
+
+        <div class="text-box">
+            <h1>Свържи се с нас </h1>
+            <p>Ако искаш да се свържеш с нас попълно формата по-долу</p>
+        </div>
+    </section>
+
+
+
+
+
+<section class="contact-section">
+  <h2>Свържи се с нас</h2>
+
+  <form id="contactForm">
+    <label for="name">Име и фамилия</label>
+    <input type="text" id="name" placeholder="Вашето име" required>
+    <div class="error" id="nameError"></div>
+
+    <label for="email">Имейл</label>
+    <input type="email" id="email" placeholder="you@example.com" required>
+    <div class="error" id="emailError"></div>
+
+    <label for="subject">Тема</label>
+    <input type="text" id="subject" placeholder="Причина за контакт" required>
+    <div class="error" id="subjectError"></div>
+
+    <label for="message">Съобщение</label>
+    <textarea id="message" rows="6" placeholder="Напишете съобщение..." required></textarea>
+    <div class="error" id="messageError"></div>
+
+    <div class="form-footer">
+      <button type="submit">Изпрати</button>
+      <div class="success-message" id="successMessage">Съобщението е изпратено успешно!</div>
+    </div>
+  </form>
+</section>
+
+
+
+
+    <!-- Footer Container -->
+    <footer id="footer-container">
+        <section class="footer" id="footer">
+            <h3>Пловдивски университет "Паисий Хилендарски"</h3>
+            <p>ул. "Цар Асен" №24, 4000 Пловдив</p>
+            <p>Телефон: +359 32 261 261 | Email: info@uni-plovdiv.bg</p>
+            <p>© 2025 Всички права запазени.</p>
+        </section>
+    </footer>
+
+    </div>
+
+
+
+
+ 
+
+
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const name = document.getElementById("name");
+            const email = document.getElementById("email");
+            const subject = document.getElementById("subject");
+            const message = document.getElementById("message");
+            const successMsg = document.getElementById("successMessage");
+
+            // Готови error елементи в HTML
+            const nameError = document.getElementById("nameError");
+            const emailError = document.getElementById("emailError");
+            const subjectError = document.getElementById("subjectError");
+            const messageError = document.getElementById("messageError");
+
+            // Изчистване на стари съобщения
+            nameError.textContent = "";
+            emailError.textContent = "";
+            subjectError.textContent = "";
+            messageError.textContent = "";
+            successMsg.style.display = "none";
+
+            let isValid = true;
+
+            // Валидация: Име
+            if (!/^[а-яА-Яa-zA-Z]{2,}\s[а-яА-Яa-zA-Z]{2,}$/.test(name.value.trim())) {
+                nameError.textContent = "Моля, въведете пълно име (име и фамилия).";
+                isValid = false;
+            }
+
+            // Валидация: Имейл
+            const emailRegex = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+            if (!emailRegex.test(email.value.trim())) {
+                emailError.textContent = "Моля, въведете валиден имейл адрес.";
+                isValid = false;
+            }
+
+            // Валидация: Тема
+            if (subject.value.trim().length < 5) {
+                subjectError.textContent = "Темата трябва да съдържа поне 5 символа.";
+                isValid = false;
+            }
+
+            // Валидация: Съобщение
+            if (message.value.trim().length < 15) {
+                messageError.textContent = "Съобщението трябва да съдържа поне 15 символа.";
+                isValid = false;
+            }
+
+            // Успешно изпращане
+            if (isValid) {
+                successMsg.style.display = "block";
+                this.reset();
+                setTimeout(() => {
+                    successMsg.style.display = "none";
+                }, 5000);
+            }
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

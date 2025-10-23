@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерия | ПУ "Паисий Хилендарски"</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Хедър с навигация -->
+    <section class="galeria-header" >
+        <nav>
+            <a href="index.html">
+                <img src="../images/logo.png" alt="PU Logo">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Начало</a></li>
+                    <li><a href="gallery.html">Галерия</a></li>
+                    <li><a href="aboutUs.html">За Нас</a></li>
+                    <li><a href="index.html#courses">Курсове</a></li>
+                    <li><a href="contact.html">Контакти</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Видео галерия на ПУ</h1>
+            <p>Разгледай видеа, генерирани с помощта на изкуствен интелект</p>
+        </div>
+    </section>
+
+    <!-- Галерия със съдържание от AI -->
+    <section class="gallery" id="gallery">
+        <h1>Видео галерия</h1>
+        <p>Генерирани с помощта на генеративен AI</p>
+
+        <div class="row">
+            <div class="video-col">
+                <video controls>
+                    <source src="../images/video1.mp4" type="video/mp4">
+                    Вашият браузър не поддържа видео таг.
+                </video>
+                <h3>За основаването на ПУ</h3>
+            </div>
+
+            <div class="video-col">
+                <video controls>
+                    <source src="../images/video2.mp4" type="video/mp4">
+                    Вашият браузър не поддържа видео таг.
+                </video>
+                <h3>За нашите Специалности</h3>
+            </div>
+
+            <div class="video-col">
+                <video controls>
+                    <source src="../images/video3.mp4" type="video/mp4">
+                    Вашият браузър не поддържа видео таг.
+                </video>
+                <h3>История на университета</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer" id="footer">
+        <h3>Пловдивски университет "Паисий Хилендарски"</h3>
+        <p>ул. "Цар Асен" №24, 4000 Пловдив</p>
+        <p>Телефон: +359 32 261 261 | Email: info@uni-plovdiv.bg</p>
+        <p>© 2025 Всички права запазени.</p>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>

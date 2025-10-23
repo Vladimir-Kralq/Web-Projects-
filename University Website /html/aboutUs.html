@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пловдивски университет "Паисий Хилендарски"</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+
+    <!---------Header------->
+    
+    
+    <section class="sub-header">
+        <nav>
+            <a href="https://uni-plovdiv.bg">
+                <img src="../images/logo.png" alt="uni-plovdiv">
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Начало</a></li>
+                    <li><a href="gallery.html">Галерия</a></li>
+                    <li><a href="aboutUs.html">За Нас</a></li>
+                    <li><a href="index.html#courses">Курсове</a></li>
+                    <li><a href="contact.html">Контакти</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+      <h1>За Нас</h1>
+
+    </section>
+
+
+ <!---------Abou us content------->
+
+ <section class="about-us">
+    <div class="row">
+      <div class="about-col">
+        <h1>Ние сме най-големия университет в Южна България</h1>
+        <p>
+          Пловдивският университет „Паисий Хилендарски“ е водещ образователен и научен център с дългогодишни традиции и модерна визия. Ние предоставяме качествено обучение в широк спектър от специалности, съчетано с възможности за изследователска дейност, международен обмен и професионално развитие. Университетът обединява студенти, преподаватели и партньори в мисията за знание, иновации и обществена отговорност.
+        </p>
+        <a href="https://uni-plovdiv.bg" class="hero-btn red-btn">РАЗГЛЕДАЙТЕ СЕГА</a>
+      </div>
+  
+      <div class="about-col">
+        <img src="../images/about.jpg" alt="За нас">
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="course">
+    <h1> Нашите Приоритети</h1>
+   
+    <div class="row">
+        <div class="coure-col">
+            <h3>Качество на обучението</h3>
+            <p>Програмите ни отговарят на съвременните стандарти и нужди на пазара на труда.</p>
+
+
+
+        </div>
+        <div class="coure-col">
+            <h3>Иновации и наука </h3>
+          <p>Насърчаваме изследователската дейност, създаваме условия за иновации и растеж.</p>
+
+
+
+
+        </div>
+
+        <div class="coure-col">
+            <h3>Общност и подкрепа </h3>
+            <p>Студентите ни са в центъра – с грижа, сътрудничество и уважение.</p>
+
+
+
+
+        </div>
+
+
+
+
+    </div>
+
+</section>
+
+
+
+    <!---------Footer------->
+
+    <br><br><br><section class="footer">
+        <h3>Пловдивски университет "Паисий Хилендарски"</h3>
+        <p>ул. "Цар Асен" №24, 4000 Пловдив</p>
+        <p>Телефон: +359 32 261 261 | Email: info@uni-plovdiv.bg</p>
+        <p>© 2025 Всички права запазени.</p>
+    </section>
+
+
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>
