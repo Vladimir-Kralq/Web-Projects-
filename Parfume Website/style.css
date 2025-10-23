@@ -1,0 +1,62 @@
+/* Навигация - елегантна за тема парфюми */
+.navbar-parfumea {
+  background-color: #f8e9e0;
+  border-bottom: 1px solid #e4d0c3;
+}
+
+.navbar-parfumea .navbar-brand {
+  font-weight: bold;
+  font-family: 'Georgia', serif;
+  color: #5a3e36;
+}
+
+.navbar-parfumea .nav-link {
+  color: #5a3e36;
+  font-family: 'Georgia', serif;
+  transition: color 0.3s ease;
+}
+
+.navbar-parfumea .nav-link:hover,
+.navbar-parfumea .nav-link.active {
+  color: #b77b6d;
+}
+
+
+/* Carousel надписи */
+.carousel-caption {
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 12px;
+  padding: 1.5rem;
+  color: #5a3e36;
+  font-family: 'Georgia', serif;
+}
+
+.carousel-caption h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.carousel-caption p {
+  font-size: 1.1rem;
+}
+
+
+
+
+/* Галерия – ефект при hover */
+.gallery-img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Продукти (карти) – ефект при hover */
+.card:hover {
+  transform: translateY(-8px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
