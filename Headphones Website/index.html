@@ -1,0 +1,528 @@
+
+    
+
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AudioLuxe</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Header Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm py-3">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-uppercase" href="#">AudioLuxe</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Превключи навигацията">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Начало</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#catalog">Каталог</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#gallery">Галерия</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contacts">Контакти</a>
+        </li>
+       
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+<!-- Bootstrap Carousel -->
+<div id="headphoneCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#headphoneCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Слайд 1"></button>
+    <button type="button" data-bs-target="#headphoneCarousel" data-bs-slide-to="1" aria-label="Слайд 2"></button>
+    <button type="button" data-bs-target="#headphoneCarousel" data-bs-slide-to="2" aria-label="Слайд 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="image/front1.jpeg" class="d-block w-100" alt="Черни слушалки">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>AudioLuxe Brown Edition</h5>
+        <p>Премиум шумопотискащи слушалки</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="image/front2.webp" class="d-block w-100" alt="Кафяви слушалки">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Vintage Studio Style</h5>
+        <p>Класически звук с модерен дизайн</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="image/front3.webp" class="d-block w-100" alt="Бели слушалки">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Clean Sound, Clean Look</h5>
+        <p>Минимализъм и комфорт в едно</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#headphoneCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Предишен</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#headphoneCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Следващ</span>
+  </button>
+</div>
+
+
+
+
+
+
+
+
+<section class="py-5 bg-light" id="catalog">
+  <div class="container">
+    <h2 class="text-center mb-5" style="font-family: 'Georgia', serif;">Каталог</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+<!-- Продукт 1 -->
+<div class="col">
+  <div class="card h-100 shadow">
+    <img src="image/pr1.webp" class="card-img-top" alt="Слушалки модел 1">
+    <div class="card-body bg-light">
+      <h5 class="card-title">AeroTone X9</h5>
+      <span class="badge bg-success mb-2">Noise Canceling</span>
+      <p class="card-text text-muted">Безжични слушалки с до 40ч батерия и Hi-Fi звук.</p>
+      <p class="fw-bold text-primary">Цена: 139.00 лв</p>
+    </div>
+  </div>
+</div>
+
+<!-- Продукт 2 -->
+<div class="col">
+  <div class="card h-100 shadow">
+    <img src="image/pr2.webp" class="card-img-top" alt="Слушалки модел 2">
+    <div class="card-body bg-light">
+      <h5 class="card-title">LuxeBeat Studio</h5>
+      <span class="badge bg-warning text-dark mb-2">Limited Edition</span>
+      <p class="card-text text-muted">Професионални студийни слушалки с златни акценти.</p>
+      <p class="fw-bold text-primary">Цена: 169.00 лв</p>
+    </div>
+  </div>
+</div>
+
+<!-- Продукт 3 -->
+<div class="col">
+  <div class="card h-100 shadow">
+    <img src="image/pr3.webp" class="card-img-top" alt="Слушалки модел 3">
+    <div class="card-body bg-light">
+      <h5 class="card-title">PureSound Air</h5>
+      <span class="badge bg-primary mb-2">Bluetooth 5.3</span>
+      <p class="card-text text-muted">Леки и минималистични слушалки с кристално чист звук.</p>
+      <p class="fw-bold text-primary">Цена: 119.00 лв</p>
+    </div>
+  </div>
+</div>
+
+<!-- Продукт 4 -->
+<div class="col">
+  <div class="card h-100 shadow">
+    <img src="image/pr4.webp" class="card-img-top" alt="Слушалки модел 4">
+    <div class="card-body bg-light">
+      <h5 class="card-title">PureSound Air</h5>
+      <span class="badge bg-primary mb-2">Bluetooth 5.3</span>
+      <p class="card-text text-muted">Леки и минималистични слушалки с кристално чист звук.</p>
+      <p class="fw-bold text-primary">Цена: 119.00 лв</p>
+    </div>
+  </div>
+</div>
+
+<!-- Продукт 5 -->
+<div class="col">
+  <div class="card h-100 shadow">
+    <img src="image/pr5.webp" class="card-img-top" alt="Слушалки модел 5">
+    <div class="card-body bg-light">
+      <h5 class="card-title">PureSound Air</h5>
+      <span class="badge bg-success mb-2">Noise Canceling</span>
+      <p class="card-text text-muted">Леки и минималистични слушалки с кристално чист звук.</p>
+      <p class="fw-bold text-primary">Цена: 129.00 лв</p>
+    </div>
+  </div>
+</div>
+
+<!-- Продукт 6 -->
+<div class="col">
+  <div class="card h-100 shadow">
+    <img src="image/pr6.webp" class="card-img-top" alt="Слушалки модел 6">
+    <div class="card-body bg-light">
+      <h5 class="card-title">PureSound Air</h5>
+      <span class="badge bg-primary mb-2">Bluetooth 5.3</span>
+      <p class="card-text text-muted">Леки и минималистични слушалки с кристално чист звук.</p>
+      <p class="fw-bold text-primary">Цена: 119.00 лв</p>
+    </div>
+  </div>
+</div>
+
+<!-- Продукт 7 -->
+<div class="col">
+  <div class="card h-100 shadow">
+    <img src="image/pr7.webp" class="card-img-top" alt="Слушалки модел 7">
+    <div class="card-body bg-light">
+      <h5 class="card-title">PureSound Air</h5>
+      <span class="badge bg-warning text-dark mb-2">Limited Edition</span>
+      <p class="card-text text-muted">Леки и минималистични слушалки с кристално чист звук.</p>
+      <p class="fw-bold text-primary">Цена: 149.00 лв</p>
+    </div>
+  </div>
+</div>
+
+<!-- Продукт 8 -->
+<div class="col">
+  <div class="card h-100 shadow">
+    <img src="image/pr8.webp" class="card-img-top" alt="Слушалки модел 8">
+    <div class="card-body bg-light">
+      <h5 class="card-title">PureSound Air</h5>
+      <span class="badge bg-primary mb-2">Bluetooth 5.3</span>
+      <p class="card-text text-muted">Леки и минималистични слушалки с кристално чист звук.</p>
+      <p class="fw-bold text-primary">Цена: 119.00 лв</p>
+    </div>
+  </div>
+</div>
+
+<!-- Продукт 9 -->
+<div class="col">
+  <div class="card h-100 shadow">
+    <img src="image/pr9.webp" class="card-img-top" alt="Слушалки модел 9">
+    <div class="card-body bg-light">
+      <h5 class="card-title">PureSound Air</h5>
+      <span class="badge bg-warning text-dark mb-2">Limited Edition</span>
+      <p class="card-text text-muted">Леки и минималистични слушалки с кристално чист звук.</p>
+      <p class="fw-bold text-primary">Цена: 149.00 лв</p>
+    </div>
+  </div>
+</div>
+
+    
+    
+    
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section id="gallery" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5" style="font-family: 'Georgia', serif;">Галерия</h2>
+    <div class="row g-4">
+
+      <!-- Изображение 1 -->
+      <div class="col-md-4">
+        <img src="image/gal1.jpg" class="img-fluid rounded shadow-sm gallery-img" data-bs-toggle="modal" data-bs-target="#modal1" alt="Gallery Image 1">
+      </div>
+
+      <!-- Изображение 2 -->
+      <div class="col-md-4">
+        <img src="image/gal2.jpg" class="img-fluid rounded shadow-sm gallery-img" data-bs-toggle="modal" data-bs-target="#modal2" alt="Gallery Image 2">
+      </div>
+
+      <!-- Изображение 3 -->
+      <div class="col-md-4">
+        <img src="image/gal3.jpg" class="img-fluid rounded shadow-sm gallery-img" data-bs-toggle="modal" data-bs-target="#modal3" alt="Gallery Image 3">
+      </div>
+
+
+
+
+      
+      <!-- Изображение 4 -->
+      <div class="col-md-4">
+        <img src="image/gal4.jpg" class="img-fluid rounded shadow-sm gallery-img" data-bs-toggle="modal" data-bs-target="#modal4" alt="Gallery Image 1">
+      </div>
+
+      <!-- Изображение 5 -->
+      <div class="col-md-4">
+        <img src="image/gal5.jpg" class="img-fluid rounded shadow-sm gallery-img" data-bs-toggle="modal" data-bs-target="#modal5" alt="Gallery Image 2">
+      </div>
+
+      <!-- Изображение 6 -->
+      <div class="col-md-4">
+        <img src="image/gal6.jpg" class="img-fluid rounded shadow-sm gallery-img" data-bs-toggle="modal" data-bs-target="#modal6" alt="Gallery Image 3">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<!-- Модал 1 -->
+<div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <img src="image/gal1.jpg" class="img-fluid rounded" alt="Gallery Image 1">
+    </div>
+  </div>
+</div>
+
+<!-- Модал 2 -->
+<div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <img src="image/gal2.jpg" class="img-fluid rounded" alt="Gallery Image 2">
+    </div>
+  </div>
+</div>
+
+<!-- Модал 3 -->
+<div class="modal fade" id="modal3" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <img src="image/gal3.jpg" class="img-fluid rounded" alt="Gallery Image 3">
+    </div>
+  </div>
+</div>
+
+<!-- Модал 4 -->
+<div class="modal fade" id="modal4" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <img src="image/gal4.jpg" class="img-fluid rounded" alt="Gallery Image 4">
+    </div>
+  </div>
+</div>
+
+<!-- Модал 5 -->
+<div class="modal fade" id="modal5" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <img src="image/gal5.jpg" class="img-fluid rounded" alt="Gallery Image 5">
+    </div>
+  </div>
+</div>
+
+<!-- Модал 6 -->
+<div class="modal fade" id="modal6" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <img src="image/gal6.jpg" class="img-fluid rounded" alt="Gallery Image 6">
+    </div>
+  </div>
+</div>
+
+
+
+<section id="faq" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Често задавани въпроси</h2>
+
+    <div class="accordion" id="accordionExample">
+      
+      <!-- Елемент 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Колко време издържа батерията на слушалките?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            До 40 часа с едно зареждане при нормална употреба. С функция за бързо зареждане.
+          </div>
+        </div>
+      </div>
+
+      <!-- Елемент 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Има ли гаранция продуктът?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Да, всички слушалки идват с 24-месечна гаранция.
+          </div>
+        </div>
+      </div>
+
+      <!-- Елемент 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Може ли да се свързват с два устройства едновременно?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Да, моделите с Bluetooth 5.2 и нагоре поддържат мултиустройство (multipoint connection).
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<section id="contacts" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Свържи се с нас</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Име</label>
+            <input type="text" class="form-control" id="name" placeholder="Въведете вашето име">
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Имейл</label>
+            <input type="email" class="form-control" id="email" placeholder="example@email.com">
+          </div>
+
+          <div class="mb-3">
+            <label for="message" class="form-label">Съобщение</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Вашето съобщение тук..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Изпрати</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<footer class="bg-dark text-white py-4 mt-5">
+  <div class="container">
+    <div class="row">
+
+      <!-- Колона 1: Бранд -->
+      <div class="col-md-4 mb-3">
+        <h5 class="text-uppercase">AudioLuxe</h5>
+        <p class="text-muted">Премиум слушалки за ценители на качествения звук.</p>
+      </div>
+
+      <!-- Колона 2: Бързи връзки -->
+      <div class="col-md-4 mb-3">
+        <h5 class="text-uppercase">Навигация</h5>
+        <ul class="list-unstyled">
+          <li><a href="#catalog" class="text-white text-decoration-none">Каталог</a></li>
+          <li><a href="#gallery" class="text-white text-decoration-none">Галерия</a></li>
+          <li><a href="#contacts" class="text-white text-decoration-none">Контакти</a></li>
+          <li><a href="#faq" class="text-white text-decoration-none">Въпроси</a></li>
+        </ul>
+      </div>
+
+      <!-- Колона 3: Контакт -->
+      <div class="col-md-4 mb-3">
+        <h5 class="text-uppercase">Контакт</h5>
+        <p class="mb-1">Email: info@audioluxe.bg</p>
+        <p class="mb-1">Телефон: +359 888 123 456</p>
+        <p>Адрес: ул. Музика 1, София</p>
+      </div>
+
+    </div>
+
+    <hr class="border-light">
+
+    <div class="text-center small text-muted">
+      © 2025 AudioLuxe. Всички права запазени.
+    </div>
+  </div>
+</footer>
+
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("#contacts form");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById("name");
+      const email = document.getElementById("email");
+      const message = document.getElementById("message");
+
+      let isValid = true;
+      let errorMessage = "";
+
+      [name, email, message].forEach(input => input.classList.remove("is-invalid"));
+
+      if (name.value.trim() === "") {
+        isValid = false;
+        name.classList.add("is-invalid");
+        errorMessage += "Моля, въведете вашето име.\n";
+      }
+
+      const emailPattern = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+      if (!emailPattern.test(email.value)) {
+        isValid = false;
+        email.classList.add("is-invalid");
+        errorMessage += "Моля, въведете валиден имейл адрес.\n";
+      }
+
+      if (message.value.trim() === "") {
+        isValid = false;
+        message.classList.add("is-invalid");
+        errorMessage += "Моля, въведете съобщение.\n";
+      }
+
+      if (isValid) {
+        alert("Формата е изпратена успешно!");
+        form.reset();
+      } else {
+        alert(errorMessage);
+      }
+    });
+  });
+</script>
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+</body>
+</html>
