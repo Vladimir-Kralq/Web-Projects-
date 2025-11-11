@@ -1,0 +1,876 @@
+/* ---------------------------------------------------- */
+/* ОСНОВНИ СТИЛОВЕ (ЗА DESKTOP - НЕПРОМЕНЕНИ ВИЗУАЛНО) */
+/* ---------------------------------------------------- */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* Навигация */
+.menu ul{
+    background-color: #333333;
+    color: white;
+    list-style-type: none;
+    overflow: hidden;
+    position: fixed;
+    margin: 0;
+    padding: 1px 1px 1px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    z-index: 9999;
+}
+.menu li{
+    color:white;
+    text-align: center;
+    padding: 15px 15px 15px 0;
+    font-size: 22px; /* Уголемен шрифт */
+}
+.menu li a:link, a:visited{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Изображение в началото */
+.topImg img{
+    width: 100%;
+    height: 750px; /* Увеличена височина */
+    object-fit: cover;
+}
+
+.header{
+    font-family: "Prata",serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px; /* Уголемен шрифт */
+    text-align: center;
+    text-transform: uppercase;
+    color: #25252d;
+    margin: 0 auto;
+}
+
+/* Секция Въведение (Две колони - 50%/50%) */
+.introduction{
+    margin-top: 50px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+.text{
+    width: 50%; 
+    margin-left: 0; 
+    padding: 40px 60px;
+    text-align: center;
+}
+.text h1{
+    font-family: "Prata",serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 48px; /* Уголемен шрифт */
+    text-transform: uppercase;
+    text-align: center;
+    color: #9f8e63;
+    margin: 0 auto 40px;
+}
+.text h2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px; /* Уголемен шрифт */
+    text-align: center;
+    text-transform: uppercase;
+    color: #25252d;
+    margin: 0 auto 40px;
+}
+.text p{
+    font-family: "Mulish",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px; /* Уголемен шрифт */
+    text-align: center;
+    line-height: 28px; /* Коригиран line-height */
+    color: #25252d;
+    margin: 0 auto;
+}
+.text h3{
+    display: block;
+    font-family: "Mulish",sans-serif;
+    font-weight: 400;
+    font-size: 28px; /* Уголемен шрифт */
+    color: #9f8e63;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding-right: 50px;
+    margin-bottom: 1em;
+}
+.text a{
+    color: #25252d;
+    cursor: pointer;
+    font-family: "Prata",serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 46px; /* Уголемен шрифт */
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+.pic{
+    width: 50%; 
+}
+.pic img{
+    width: 100%;
+    height: 750px; /* Увеличена височина */
+    object-fit: cover;
+}
+
+/* Секция About Us */
+.aboutUs{
+    margin:100px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.aboutUs .shef{
+    width: 50%;
+}
+.aboutUs .info{
+    width: 50%;
+    text-align:center;
+    margin-top: 30px;
+}
+.aboutUs .info .about{
+    position: static; 
+    background-color: #fff;
+    padding: 25px 40px 10px 100px;
+    z-index: 60;
+    display: block;
+    max-width: 600px;
+    margin-left: auto; 
+    margin-right: auto;
+}
+.aboutUs .info h1{
+    font-family: "Prata",serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 48px; /* Уголемен шрифт */
+    text-transform: uppercase;
+    text-align: center;
+    color: #9f8e63;
+    margin: 0 auto 40px;
+}
+.aboutUs .info h2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px; /* Уголемен шрифт */
+    text-align: center;
+    text-transform: uppercase;
+    color: #25252d;
+    margin: 0 auto 40px;
+}
+.aboutUs .info p{
+    font-family: "Mulish",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px; /* Уголемен шрифт */
+    text-align: center;
+    line-height: 28px; /* Коригиран line-height */
+    color: #25252d;
+    margin: 0 auto;
+    padding: 0 20px 45px;
+}
+
+/* Секция anotherInfo */
+.anotherInfo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.anotherInfo .aboutShef{
+    width: 50%;
+    position: relative;
+    background-color: #fff;
+    z-index: 10;
+    display: block;
+}
+.anotherInfo .shefimg{
+    width: 50%;
+}
+.anotherInfo .shefimg img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.anotherInfo .aboutShef h3{
+    display: block;
+    font-family: "Mulish",sans-serif;
+    font-weight: 400;
+    font-size: 28px; /* Уголемен шрифт */
+    color: #9f8e63;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding-right: 50px;
+    margin-bottom: 1em;
+}
+.anotherInfo .aboutShef a{
+    color: #25252d;
+    cursor: pointer;
+    font-family: "Prata",serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 46px; /* Уголемен шрифт */
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+/* Секция Location (Карта) */
+.location{
+    text-align: center;
+    margin-top: 100px;
+}
+.location h1{
+    font-family: "Prata",serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 48px; /* Уголемен шрифт */
+    text-transform: uppercase;
+    text-align: center;
+    color: #9f8e63;
+}
+.location p{
+    width: 90%;
+    max-width: 600px; 
+    font-family: "Mulish",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px; /* Уголемен шрифт */
+    text-align: left;
+    line-height: 28px; /* Коригиран line-height */
+    color: #25252d;
+    margin: 0 auto;
+}
+.location .map iframe{
+    width: 90%;
+    max-width: 800px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 500px; /* Увеличена височина на картата */
+}
+
+.aboutUsHeader h1{
+    font-family: "Prata",serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 64px; /* Уголемен шрифт */
+    text-transform: uppercase;
+    text-align: center;
+    color: #9f8e63;
+    margin-top: 70px;
+    line-height: 0.1;
+}
+
+/* Секция shefInfo */
+.shefInfo{
+    margin:100px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.shefInfo .shefPic{
+    width: 50%;
+}
+.shefInfo .shefInfoText{
+    width: 90%; 
+    max-width: 600px; 
+    height: auto;
+    position: static; 
+    background-color: #fff;
+    margin-top: 100px;
+    padding: 25px 40px 10px 100px;
+    z-index: 60;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.shefInfo .shefInfoText h2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px; /* Уголемен шрифт */
+    text-align: center;
+    text-transform: uppercase;
+    color: #25252d;
+    margin: 0 auto 40px;
+}
+.shefInfo .shefInfoText p{
+    font-family: "Mulish",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px; /* Уголемен шрифт */
+    text-align: center;
+    line-height: 28px; /* Коригиран line-height */
+    color: #25252d;
+    margin: 0 auto;
+    padding: 0 20px 45px;
+}
+
+/* Секция historyInPlate */
+.historyInPlate{
+    margin:100px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.historyInPlate .shefPicRight{
+    text-align: right;
+    width: 50%;
+}
+.historyInPlate .historyPlateText{
+    width: 90%;
+    max-width: 600px; 
+    height: auto;
+    position: static; 
+    background-color: #fff;
+    margin-top: 50px;
+    padding: 25px 40px 10px 100px;
+    z-index: 70;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.historyInPlate .historyPlateText h2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px; /* Уголемен шрифт */
+    text-align: center;
+    text-transform: uppercase;
+    color: #25252d;
+    margin: 0 auto 40px;
+}
+.historyInPlate .historyPlateText p{
+    font-family: "Mulish",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px; /* Уголемен шрифт */
+    text-align: center;
+    line-height: 28px; /* Коригиран line-height */
+    color: #25252d;
+    margin: 0 auto;
+    padding: 0 20px 45px;
+}
+
+/* Секция authorKitchen */
+.authorKitchen{
+    margin:100px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.authorKitchen .authorPic{
+    width: 50%;
+}
+.authorKitchen .authorPic img{
+    width: 100%; 
+    max-width: 80%; 
+}
+.authorKitchen .authorText{
+    width: 90%;
+    max-width: 600px; 
+    height: auto;
+    position: static; 
+    background-color: #fff;
+    margin-top: 100px;
+    padding: 25px 40px 10px 100px;
+    z-index: 60;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.authorKitchen .authorText h2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px; /* Уголемен шрифт */
+    text-align: center;
+    text-transform: uppercase;
+    color: #25252d;
+    margin: 0 auto 40px;
+}
+.authorKitchen .authorText p{
+    font-family: "Mulish",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px; /* Уголемен шрифт */
+    text-align: center;
+    line-height: 28px; /* Коригиран line-height */
+    color: #25252d;
+    margin: 0 auto;
+    padding: 0 20px 45px;
+}
+
+/* Секция Меню (menu_items) */
+.menu_items {
+    position: relative;
+    background: #ece8e0;
+}
+.menu_items .custom_container {
+    display: flex;
+    max-width: 1200px; 
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.menu_items .all_category {
+    position: relative;
+    left: auto;
+    transform: none;
+    z-index: 999;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px; 
+}
+.menu_items .all_category ul {
+    display: block;
+    background: #f7f7f7;
+    box-shadow: 0px 8px 24px rgba(0,0,0,.1);
+    border-radius: 2px;
+    padding: 40px 30px 80px;
+    margin: 0 auto;
+}
+.menu_items .all_category ul li {
+    list-style-type: none;
+    padding-bottom: 45px;
+    max-width: 200px;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.menu_items .all_category ul li a {
+    display: inline-block;
+    position: relative;
+    font-family: "Prata",serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px; /* Уголемен шрифт */
+    line-height: 28px; /* Коригиран line-height */
+    text-transform: uppercase;
+    color: #25252d;
+    padding-left: 15px;
+}
+.menu_items .all_category ul li a .underline {
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 100%;
+    height: 1px;
+    background-color: #9f8e63;
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+}
+.menu_items .different_category {
+    padding: 65px 0 50px;
+    margin-left: 0;
+    padding-left: 50px; 
+    width: 100%;
+    max-width: 700px; 
+}
+.menu_items .different_category .productbycategory {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #9f8e63;
+}
+.menu_items .different_category .productbycategory img{
+    width:300px; /* Увеличена ширина */
+    height:200px; /* Увеличена височина */
+    object-fit: cover;
+}
+.menu_items .different_category .productbycategory h4 {
+    font-family: "Prata",serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px; /* Уголемен шрифт */
+    text-transform: uppercase;
+    color: #9f8e63;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+.menu_items .different_category .productbycategory .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.menu_items .different_category .productbycategory .grid .item {
+    flex-basis: calc(50% - 15px); 
+    padding: 30px 0;
+}
+.menu_items .different_category .productbycategory .grid .item h5 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px; /* Уголемен шрифт */
+    text-align: center;
+    color: #25252d;
+    margin: 0 auto;
+}
+.menu_items .different_category .productbycategory .grid .item .prod_desc {
+    padding: 15px 0 10px;
+}
+.menu_items .different_category .productbycategory .grid .item .prod_desc p {
+    display: inline;
+    max-width: 470px;
+    font-family: "Prata",serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px; /* Уголемен шрифт */
+    line-height: 26px; /* Коригиран line-height */
+    text-align: center;
+    color: #25252d;
+    margin: 0 auto;
+}
+.menu_items .different_category .productbycategory .grid .item .price {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px; /* Уголемен шрифт */
+    line-height: 20px; /* Коригиран line-height */
+    text-align: center;
+    color: #25252d;
+    margin: 0 auto;
+}
+bdi {
+    unicode-bidi: isolate;
+}
+
+/* Галерия */
+.galery .row{
+    margin: 0 2%;
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.galery .item{
+    flex-basis: calc(33.33% - 12px); 
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
+.galery .item img{
+    width:100%;
+    cursor: pointer;
+    height: auto;
+}
+
+/* Модални прозорци (Оставени без промяна) */
+#myImg1,#myImg2,#myImg3,#myImg4,#myImg5,#myImg6,#myImg7,#myImg8,#myImg9,#myImg10,#myImg11,#myImg12,#myImg13,#myImg14,#myImg15 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg1:hover,#myImg2:hover,#myImg3:hover,#myImg4:hover,#myImg5:hover,#myImg6:hover,#myImg7:hover,#myImg8:hover,#myImg9:hover,#myImg10:hover,#myImg11:hover,#myImg12:hover,#myImg13:hover,#myImg14:hover,#myImg15:hover {
+    opacity: 0.7;
+}
+
+.modal1,.modal2,.modal3,.modal4,.modal5,.modal6,.modal7,.modal8,.modal9,.modal10,.modal11,.modal12,.modal13,.modal14,.modal15{
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content1,.modal-content2,.modal-content3,.modal-content4,.modal-content5,.modal-content6,.modal-content7,.modal-content8,.modal-content9,.modal-content10,.modal-content11,.modal-content12,.modal-content13,.modal-content14,.modal-content15 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 800px; /* Увеличена максимална ширина */
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+#caption1,#caption2,#caption3,#caption4,#caption5,#caption6,#caption7,#caption8,#caption9,#caption10,#caption11,#caption12,#caption13,#caption14,#caption15 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+@keyframes zoom1 { from { transform: scale(0.1) } to { transform: scale(1) } }
+@keyframes zoom2 { from { transform: scale(0.1) } to { transform: scale(1) } }
+@keyframes zoom3 { from { transform: scale(0.1) } to { transform: scale(1) } }
+@keyframes zoom4 { from { transform: scale(0.1) } to { transform: scale(1) } }
+@keyframes zoom5 { from { transform: scale(0.1) } to { transform: scale(1) } }
+@keyframes zoom6 { from { transform: scale(0.1) } to { transform: scale(1) } }
+@keyframes zoom7 { from { transform: scale(0.1) } to { transform: scale(1) } }
+@keyframes zoom8 { from { transform: scale(0.1) } to { transform: scale(1) } }
+@keyframes zoom9 { from { transform: scale(0.1) } to { transform: scale(1) } }
+@keyframes zoom10 { from { transform: scale(0.1) } to { transform: scale(1) } }
+@keyframes zoom11 { from { transform: scale(0.1) } to { transform: scale(1) } }
+@keyframes zoom12 { from { transform: scale(0.1) } to { transform: scale(1) } }
+@keyframes zoom13 { from { transform: scale(0.1) } to { transform: scale(1) } }
+@keyframes zoom14 { from { transform: scale(0.1) } to { transform: scale(1) } }
+@keyframes zoom15 { from { transform: scale(0.1) } to { transform: scale(1) } }
+.close1,.close2,.close3,.close4,.close5,.close6,.close7,.close8,.close9,.close10,.close11,.close12,.close13,.close14,.close15 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close1:hover,.close1:focus,.close2:hover,.close2:focus,.close3:hover,.close3:focus,.close4:hover,.close4:focus,.close5:hover,.close5:focus,
+.close6:hover,.close6:focus,.close7:hover,.close7:focus,.close8:hover,.close8:focus,.close9:hover,.close9:focus,.close10:hover,.close10:focus,
+.close11:hover,.close11:focus,.close12:hover,.close12:focus,.close13:hover,.close13:focus,.close14:hover,.close14:focus,.close15:hover,.close15:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Форма */
+.backgroundForma{
+    width: 100%;
+    padding: 50px 0;
+}
+.forma{
+    margin: 20px auto; 
+    max-width: 500px; /* Увеличена максимална ширина */
+    padding:20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.401);
+    box-shadow: 0px 8px 24px rgba(0,0,0,.1);
+    border-radius: 2px;
+}
+.forma label{
+    font-family:"Prata",serif;;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px; /* Уголемен шрифт */
+    text-shadow: 3px 3px 5px  black;
+    color: white;
+    line-height: 22px;
+    padding:10px 0 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+.forma .rowOne,.rowTwo,.rowThree{
+    display: flex;
+    flex-direction: row;
+}
+.buttonSubmit input{
+    cursor: pointer;
+    position: relative;
+    font-family: "Prata",serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px; /* Уголемен шрифт */
+    text-shadow: 3px 3px 5px  black;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    background: none;
+}
+
+/* Резервация */
+.reservation{
+    text-align: center;
+    margin-top: 100px;
+    line-height: 0.9;
+}
+.reservationImg{
+    position:relative;
+}
+.reservation .reservationImg img{
+    width: 100%;
+    height: 750px; /* Увеличена височина */
+    object-fit: cover;
+}
+.reservation .boxreservation{
+    text-align: center;
+    background: rgba(255,255,255,.9);
+    box-shadow: 0px 8px 24px rgba(0,0,0,.1);
+    border-radius: 2px;
+    width: 90%; 
+    max-width: 450px; /* Увеличена максимална ширина */
+    margin: 10px;
+    padding: 40px 90px 45px; /* Уголемен padding */
+    display: inline-block;
+    position:absolute;
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+.reservation h1{
+    font-family: "Prata",serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 48px; /* Уголемен шрифт */
+    text-transform: uppercase;
+    text-align: center;
+    color: #9f8e63;
+}
+.reservation .boxreservation a{
+    color: #25252d;
+    cursor: pointer;
+    font-family: "Prata",serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 46px; /* Уголемен шрифт */
+    text-transform: uppercase;
+}
+
+/* Футър */
+.footer{
+    text-align: center;
+    margin-top:100px;
+}
+.footer img{
+    width: 15%;
+    max-width: 250px; /* Увеличена максимална ширина */
+    margin-bottom: 30px;
+}
+.footer p{
+    width: 90%;
+    max-width: 650px; /* Увеличена максимална ширина */
+    font-family: "Mulish",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px; /* Уголемен шрифт */
+    line-height: 28px; /* Коригиран line-height */
+    line-height: 0.8;
+    color: #25252d;
+    margin: 0 auto;
+}
+.footer .myInfo{
+    width:100%;
+    background-color: #ededed;
+    padding: 25px 0; /* Уголемен padding */
+    margin-top:15px;
+}
+.footer .myInfo p{
+    width: 90%;
+    max-width: 650px;
+    font-family: "Mulish",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px; /* Уголемен шрифт */
+    line-height: 28px; /* Коригиран line-height */
+    line-height: 0.8;
+    color: #25252d;
+    margin: 0 auto;
+}
+
+/* ---------------------------------------------------- */
+/* MEDIA QUERIES (АДАПТИВНИ СТИЛОВЕ ЗА МАЛКИ ЕКРАНИ) */
+/* ---------------------------------------------------- */
+
+
+@media (max-width: 1024px) {
+    
+    
+    .text, .aboutUs .info .about, .shefInfo .shefInfoText, .historyInPlate .historyPlateText, .authorKitchen .authorText {
+        padding: 20px;
+    }
+
+  
+    .menu_items .all_category {
+        max-width: 250px;
+    }
+    
+   
+    .menu_items .different_category {
+        padding-left: 20px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    
+   
+    .introduction, 
+    .aboutUs, 
+    .anotherInfo, 
+    .shefInfo, 
+    .historyInPlate, 
+    .authorKitchen {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+
+    .text, 
+    .pic, 
+    .aboutUs .shef, 
+    .aboutUs .info, 
+    .anotherInfo .aboutShef, 
+    .anotherInfo .shefimg,
+    .shefInfo .shefPic,
+    .historyInPlate .shefPicRight,
+    .authorKitchen .authorPic {
+        width: 100%;
+        margin: 0;
+        padding: 0 15px; 
+    }
+
+ 
+    .aboutUs .info .about,
+    .shefInfo .shefInfoText,
+    .historyInPlate .historyPlateText,
+    .authorKitchen .authorText {
+        position: static; 
+        margin-top: 30px;
+        padding: 25px 20px;
+        max-width: 100%;
+    }
+
+    .topImg img, .pic img, .reservation .reservationImg img {
+        height: 500px; 
+    }
+
+  
+    .galery .item{
+        flex-basis: calc(50% - 10px); 
+    }
+
+ 
+    .forma .rowOne, .rowTwo, .rowThree {
+        flex-direction: column;
+    }
+    
+    
+    .menu li {
+        padding: 10px 5px; 
+        font-size: 18px; 
+    }
+    
+    .menu_items .custom_container {
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .menu_items .all_category, .menu_items .different_category {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 0;
+        margin-left: 0;
+    }
+    .menu_items .all_category ul {
+        margin: 0 15px;
+    }
+    .menu_items .different_category .productbycategory .grid .item {
+        flex-basis: 100%; 
+    }
+
+}
