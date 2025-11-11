@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Corner Premium</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="website icon" type="jpg" href="images/websiteIcon.jpg"></link>
+        <script>
+            function validateForm() {
+              let x = document.forms["myForm"]["name"].value;
+              if (x == "") {
+                alert("Попълни полетата отбелязани със *");
+                return false;
+              }
+            }
+            </script>
+    </head>
+    <body>
+        <nav>
+            <div class="menu">
+                <ul>
+                    <li><a href="menu.html">Меню</a></li>
+                    <li><a href="booking.html">Резервация</a></li>
+                    <li><a href="index.html">&#11164; Corner Cafe &#11166;</a></li>
+                    <li><a href="galery.html">Галерия</a></li>
+                    <li><a href="aboutUs.html">За нас</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="topImg">
+            <img src="images/bookingTop.jpg" alt="bookingTop"/>
+        </div>
+        <div class="header">
+            <h1>Форма за резервация</h1>
+        </div>
+        <div class="backgroundForma" style="background-image: url(images/interior.jpg);">
+            <div class="forma">
+                <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+                    <div class="name">
+                        <label for="name">Име*</label>
+                        <input type="text" name="name" style="width:78%;" >
+                    </div>
+                    <div class="phone">
+                        <label for="phonereservation">Тел.номер*</label>
+                        <input type="text" name="phonenumber" style="width:78%;" >
+                    </div>
+                    <div class="email">
+                        <label for="emailreservation">Ел.поща*</label>
+                        <input type="email" name="reservation_email" style="width:78%;" >
+                    </div>
+                    <div class="rowOne">
+                        <div class="seats" style="margin: 0 15px 0 0;">
+                            <label for="number_of_seats">Брой места</label>
+                            <input type="number" name="number_of_seats" value="1" data-gtm-form-interact-field-id="0" class="valid" aria-invalid="false" min="1" >                
+                        </div>
+                        <div class="date"  style="margin: 0 15px 0 0;"> 
+                            <label for="reservation_date">Дата</label>
+                            <input type="date" name="reserve_date" id="reserve_date" value="14-11-2023" min="" max="2024-02-01" >
+                        </div>
+            
+                    </div>
+                    <div class="rowTwo">
+                        <div class="hour" style="margin: 0 90px 0 0;">
+                            <label for="reservation_hour">Час</label>
+                             <select name="select_reserve_hour" id="reservation_hours" >
+                                    <option selected="" disabled="" hidden="">Избери час</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                             </select>
+                        </div>
+                        <div class="minutes" style="margin: 0 15px 0 0;">
+                            <label for="reservation_minutes">Минути</label>
+                            <select name="reserve_minutes" id="reservation_minutes" >
+                                <option selected="" disabled="" hidden="">Избери минути</option>
+                                <option value="0">00</option>
+                                <option value="5">05</option>
+                                <option value="10">10</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                                <option value="25">25</option>
+                                <option value="30">30</option>
+                                <option value="35">35</option>
+                                <option value="40">40</option>
+                                <option value="45">45</option>
+                                <option value="50">50</option>
+                                <option value="55">55</option>
+                            </select>
+                        </div>                
+            
+                    </div>
+                    <div class="rowThree">
+                        <div class="non-smokers"  style="display: flex;flex-direction: row;margin: 0 50px 0 0;">
+                            <label for="non_smokers" >Непушачи</label>
+                                <span>
+                                    <input type="radio" value="non-smokers" id="non_smokers" name="smoking" style="margin:14px;" >
+                                </span>
+                        </div>
+                        <div class="smokers"  style="display: flex;flex-direction: row;">
+                            <label for="smokers">Пушачи</label>
+                                <span>
+                                    <input type="radio" value="smokers" id="smokers" name="smoking" data-gtm-form-interact-field-id="1"  style="margin:14px;" >
+                                </span>
+                        </div>
+            
+                    </div>
+                    <div class="info" style="margin:5px 0 0 0;">
+                        <label for="information">Допълнителна информация</label>
+                        <textarea name="moreinfo" style="width:78%; height: 90px;"></textarea>
+                    </div>
+                    <div class="buttonSubmit">
+                        <input type="submit" value="&#11164;Изпрати&#11166;">
+                    </div>    
+                </form>
+            </div>
+        </div>
+      
+          
+    </body>
+</html>
